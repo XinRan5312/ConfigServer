@@ -1,0 +1,16 @@
+eureka:
+  client:
+    service-url:
+      defaultZone: http://root1:123abc@localhost:8761/eureka,http://root2:123abc@localhost:8761/eureka #指定eureka-search的地址 注册过去自己 集群就可以指定多个用头号隔开
+
+spring:
+  application:
+    name: SEARCH #指定本服务的名字 便于别人在eureka-search注册中心找到自己
+  rabbitmq:
+    host: 192.168.199.109
+    port: 5672
+    username: rabbit
+    password: rabbit
+    virtual-host: /rabbit
+server:
+  port: 8081 #自己的端口号
