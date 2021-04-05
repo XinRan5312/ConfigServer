@@ -1,3 +1,4 @@
+env: xxx
 eureka:
   client:
     service-url:
